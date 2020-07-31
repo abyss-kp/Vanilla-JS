@@ -9,6 +9,10 @@
 
 <body>
   <div class="clock">
+    <span class="time XII">XII</span>
+    <span class="time III">III</span>
+    <span class="time VI">VI</span>
+    <span class="time IX">IX</span>
     <div class="clock-face">
       <div class="hand hour-hand"></div>
       <div class="hand min-hand"></div>
@@ -66,6 +70,31 @@
     transform: rotate(90deg);
     /* transition: all 0.05s; */
     /* transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1); */
+  }
+
+  .time {
+    position: absolute;
+    font-weight: bolder;
+  }
+
+  .XII {
+    top: -18px;
+    left: 48%
+  }
+
+  .VI {
+    bottom: -18px;
+    left: 48%
+  }
+
+  .III {
+    top: 50%;
+    right: -19px
+  }
+
+  .IX {
+    top: 50%;
+    left: -19px
   }
 </style>
 <script>
